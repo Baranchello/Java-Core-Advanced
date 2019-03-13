@@ -23,7 +23,7 @@ public class FirstWindow extends JFrame
 
     for (int i = 0; i < labels.length; i++)
     {
-      labels[i] = new JLabel("Тест");
+      labels[i] = new JLabel("Текстовая метка " + i);
       labels[i].setAlignmentY(CENTER_ALIGNMENT);
       add(labels[i]);
     }

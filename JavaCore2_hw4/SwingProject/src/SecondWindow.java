@@ -46,6 +46,7 @@ public class SecondWindow extends JFrame
         ptr.set_name(jtf[1].getText());
         ptr.set_patr(jtf[2].getText());
         ptr.set_null_ptr();
+        dispose();
       }
     });
 
