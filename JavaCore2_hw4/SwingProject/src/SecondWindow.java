@@ -7,7 +7,7 @@ public class SecondWindow extends JFrame
 {
   private int LIMIT = 3;
 
-  public SecondWindow(String title)
+  public SecondWindow(String title, FirstWindow ptr)
   {
     setTitle(title);
     setBounds(450, 250, 500, 250);
@@ -42,10 +42,10 @@ public class SecondWindow extends JFrame
     btn_save.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        System.out.println(jtf[0].getText());
-        System.out.println(jtf[1].getText());
-        System.out.println(jtf[2].getText());
-
+        ptr.set_fam (jtf[0].getText());
+        ptr.set_name(jtf[1].getText());
+        ptr.set_patr(jtf[2].getText());
+        ptr.set_null_ptr();
       }
     });
 
